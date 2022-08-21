@@ -6,7 +6,7 @@ services:
     image: ghcr.io/unlp-syper/svc-dns-syper:${VERSION:-latest}
     networks:
       simunet:
-        ipv4_address: 163.10.20.1
+        ipv4_address: 163.10.20.2
 
 networks:
   simunet:
