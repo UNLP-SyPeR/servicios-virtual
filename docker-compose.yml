@@ -1,0 +1,17 @@
+version: "3"
+services:
+
+  dns-redes:
+    restart: always
+    image: ghcr.io/unlp-syper/svc-dns-syper:${VERSION:-latest}
+    networks:
+      simunet:
+        ipv4_address: 163.10.20.1
+
+networks:
+  simunet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 163.10.20.0/30

@@ -1,0 +1,6 @@
+Flask/
+.direnv
+*.retry
+*/__pycache__
+*.pyc
+.cache
